@@ -1004,142 +1004,50 @@
             </section>
 
             <!-- AI 챗봇 섹션 -->
-            <section class="section">
-                <h2><span class="emoji">💬</span>AI 학습 도우미 챗봇</h2>
-                
-                <div class="chatbot-container">
-                    <div class="chatbot-title" style="font-weight:bold; font-size:1.3em; color:#2196F3; display:flex; align-items:center; gap:0.5em; border-left:4px solid #2196F3; padding-left:0.5em; margin-bottom:0.7em;">
-                        <span style="font-size:1.2em;">🤖</span> 교재 복습
+            <section class="section" style="padding-top:0;">
+                <h2 style="color:#2196F3; font-size:2em; margin-bottom:24px; display:flex; align-items:center; gap:0.5em;"><span style="font-size:1.2em;">🗨️</span>AI 학습 도우미 챗봇</h2>
+                <div class="overview" style="background:#f6fbf7; border:2px solid #4CAF50; border-radius:18px; box-shadow:0 4px 24px rgba(76,175,80,0.07); padding:32px 36px 36px 36px; position:relative;">
+                    <div style="display:flex; align-items:center; gap:0.5em; margin-bottom:10px;">
+                        <span style="font-size:1.5em;">🤖</span>
+                        <span style="font-weight:bold; font-size:1.3em; color:#2196F3; border-left:4px solid #2196F3; padding-left:0.5em;">프롬프트 학습 도우미</span>
                     </div>
-                    <p><strong>AI 모델:</strong> ChatGPT-4O | <strong>전문 분야:</strong> 프롬프트 엔지니어링</p>
-                    <p><strong>강의 내용을 복습합니다.</strong></p>
-                    <p><strong>이 교재 내에서 궁금한 점이 있으신가요?</strong><br>
-                    아래 링크를 통해 프롬프트 학습 도우미와 대화해보세요!</p>
-                    
-                    <div style="text-align: center; margin: 30px 0;">
+                    <div style="font-size:1em; color:#222; margin-bottom:10px;"><b>AI 모델:</b> ChatGPT-4O | <b>전문 분야:</b> 프롬프트 엔지니어링</div>
+                    <div style="font-size:1.1em; margin-bottom:10px;">이 강의 내용에 대해 궁금한 점이 있으시나요?<br>아래 링크를 통해 프롬프트 학습 도우미와 대화해보세요!</div>
+                    <div style="text-align:center; margin:32px 0 0 0;">
                         <a href="https://chatgpt.com/g/g-686ce44faeec8191939f9cf34cc3d307-peurompeuteu-hagseub-doumi" 
                            target="_blank" 
-                           style="display: inline-block; 
-                                  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); 
-                                  color: white; 
-                                  padding: 15px 30px; 
-                                  text-decoration: none; 
-                                  border-radius: 25px; 
-                                  font-size: 1.2em; 
-                                  font-weight: bold;
-                                  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-                                  transition: all 0.3s ease;">
-                            🤖 프롬프트 학습 도우미와 대화하기
+                           style="display:inline-block; background:linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color:white; padding:18px 44px; text-decoration:none; border-radius:25px; font-size:1.25em; font-weight:bold; box-shadow:0 5px 15px rgba(76,175,80,0.13); transition:all 0.3s ease;">
+                            <span style="font-size:1.1em;">🤖</span> 프롬프트 학습 도우미와 대화하기
                         </a>
                     </div>
-                    
-                    <!-- iframe 챗봇 인터페이스 -->
-                    <div class="chatbot-iframe-container" style="margin: 30px 0;">
-                        <div class="chatbot-header" style="background: #4CAF50; color: white; padding: 15px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center;">
-                            <h4 style="margin: 0;">🤖 프롬프트 학습 도우미</h4>
-                            <div class="chatbot-status" style="font-size: 0.9em; opacity: 0.9;">실시간 대화</div>
-                        </div>
-                        
-                        <div class="chatbot-messages" id="chatbot-messages" style="height: 400px; background: #f8f9fa; border: 1px solid #ddd; border-top: none; overflow-y: auto; padding: 20px;">
-                            <div class="message bot-message" style="margin-bottom: 15px;">
-                                <div style="background: #e8f5e8; padding: 12px; border-radius: 15px; max-width: 80%; display: inline-block;">
-                                    <strong>안녕하세요! 👋</strong><br>
-                                    저는 프롬프트 학습 도우미입니다. 강의 내용에 대해 궁금한 점이 있으시면 언제든지 질문해주세요!
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="chatbot-input" style="background: white; border: 1px solid #ddd; border-top: none; padding: 15px; border-radius: 0 0 10px 10px;">
-                            <div style="display: flex; gap: 10px;">
-                                <input type="text" id="chatbot-input-field" placeholder="질문을 입력하세요..." 
-                                       style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
-                                <button onclick="sendMessage()" 
-                                        style="background: #4CAF50; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: bold;">
-                                    전송
-                                </button>
-                            </div>
-                            <div style="margin-top: 10px; font-size: 12px; color: #666;">
-                                💡 예시: "PTCF 프레임워크에 대해 설명해주세요"
+                </div>
+                <div class="chatbot-container" style="margin-top:40px;">
+                    <div class="chatbot-title" style="font-weight:bold; font-size:1.2em; color:#388e3c; background:#4CAF50; border-radius:10px 10px 0 0; padding:16px 24px; display:flex; align-items:center; gap:0.5em;">
+                        <span style="font-size:1.2em;">🤖</span> 프롬프트 학습 도우미
+                        <span style="flex:1;"></span>
+                        <span style="font-size:1em; color:#eaffea;">실시간 대화</span>
+                    </div>
+                    <div class="chatbot-messages" id="chatbot-messages" style="height: 400px; background: #f8f9fa; border: 1px solid #4CAF50; border-top: none; overflow-y: auto; padding: 20px;">
+                        <div class="message bot-message" style="margin-bottom: 15px;">
+                            <div style="background: #e8f5e8; padding: 12px; border-radius: 15px; max-width: 80%; display: inline-block;">
+                                <strong>안녕하세요! 👋</strong><br>
+                                저는 프롬프트 학습 도우미입니다. 강의 내용에 대해 궁금한 점이 있으시면 언제든지 질문해주세요!
                             </div>
                         </div>
                     </div>
-
-                    <h4><span class="emoji">📞</span>챗봇 활용 가이드</h4>
-                    
-                    <div class="tab-container">
-                        <div class="tab-buttons">
-                            <button class="tab-button active" onclick="showChatTab('basic-questions')">기본 질문</button>
-                            <button class="tab-button" onclick="showChatTab('practice-questions')">실습 질문</button>
-                            <button class="tab-button" onclick="showChatTab('advanced-questions')">고급 질문</button>
-                            <button class="tab-button" onclick="showChatTab('work-questions')">실무 질문</button>
+                    <div class="chatbot-input" style="background: white; border: 1px solid #4CAF50; border-top: none; padding: 15px; border-radius: 0 0 10px 10px;">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" id="chatbot-input-field" placeholder="질문을 입력하세요..." 
+                                   style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;">
+                            <button onclick="sendMessage()" 
+                                    style="background: #4CAF50; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: bold;">
+                                전송
+                            </button>
                         </div>
-                        
-                        <div id="basic-questions" class="tab-content active">
-                            <h4>기본 개념 질문</h4>
-                            <ul>
-                                <li>"PTCF 중에서 어떤 요소가 가장 중요한가요?"</li>
-                                <li>"단계적 사고 유도법을 더 자세히 설명해주세요"</li>
-                                <li>"성찰 질문법의 다른 예시도 알려주세요"</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="practice-questions" class="tab-content">
-                            <h4>실습 관련 질문</h4>
-                            <ul>
-                                <li>"마케팅 분야 프롬프트를 더 개선할 방법이 있을까요?"</li>
-                                <li>"의료 분야에서 주의해야 할 프롬프트 작성법은?"</li>
-                                <li>"IT 보안 프롬프트에서 놓친 부분이 있는지 검토해주세요"</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="advanced-questions" class="tab-content">
-                            <h4>고급 기법 질문</h4>
-                            <ul>
-                                <li>"역질문 기법을 언제 사용하는 것이 효과적인가요?"</li>
-                                <li>"구조화 표현에서 어떤 기호를 더 활용할 수 있나요?"</li>
-                                <li>"다른 AI 도구에도 이 기법들을 적용할 수 있나요?"</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="work-questions" class="tab-content">
-                            <h4>실무 적용 질문</h4>
-                            <ul>
-                                <li>"우리 회사 상황에 맞는 프롬프트를 만들어주세요"</li>
-                                <li>"이 프롬프트가 효과적인지 평가해주세요"</li>
-                                <li>"더 나은 결과를 위한 개선 방향을 제시해주세요"</li>
-                            </ul>
+                        <div style="margin-top: 10px; font-size: 12px; color: #666;">
+                            💡 예시: "PTCF 프레임워크에 대해 설명해주세요"
                         </div>
                     </div>
-
-                    <h4><span class="emoji">🎯</span>챗봇 특별 기능</h4>
-                    <ul>
-                        <li><strong>즉시 피드백:</strong> 작성한 프롬프트를 바로 평가하고 개선점 제시</li>
-                        <li><strong>맞춤형 예시:</strong> 여러분의 업무나 관심 분야에 특화된 프롬프트 예시 생성</li>
-                        <li><strong>단계별 가이드:</strong> 복잡한 프롬프트 작성을 단계별로 도움</li>
-                        <li><strong>실시간 Q&A:</strong> 강의 중 이해가 안 되는 부분 즉시 해결</li>
-                    </ul>
-
-                    <h4><span class="emoji">💡</span>효과적인 챗봇 활용 팁</h4>
-                    
-                    <div class="example-container">
-                        <div class="example-bad">
-                            <h4>❌ 모호한 질문</h4>
-                            <div class="code-block">"프롬프트가 안 좋은 것 같아요"</div>
-                        </div>
-                        <div class="example-good">
-                            <h4>✅ 구체적인 질문</h4>
-                            <div class="code-block">"제가 작성한 이 마케팅 프롬프트에서 Context 부분이 부족한지 확인해주세요"</div>
-                        </div>
-                    </div>
-
-                    <h4>단계별 접근법:</h4>
-                    <div class="code-block">1단계: 기본 개념 이해 
-→ 2단계: 예시 확인 
-→ 3단계: 직접 적용 
-→ 4단계: 피드백 받기</div>
-
-                    <h4>실제 사례 활용:</h4>
-                    <div class="code-block">"제가 실제 업무에서 사용할 프롬프트를 만들어보겠습니다. 검토해주실 수 있나요?"</div>
                 </div>
             </section>
 
@@ -1486,63 +1394,39 @@
         
         // 챗봇 기능
         function sendMessage() {
-            const inputField = document.getElementById('chatbot-input-field');
-            const message = inputField.value.trim();
-            
-            if (message === '') return;
-            
+            var input = document.getElementById('chatbot-input-field');
+            var messages = document.getElementById('chatbot-messages');
+            var userText = input.value.trim();
+            if (!userText) return;
             // 사용자 메시지 추가
-            addMessage(message, 'user');
-            inputField.value = '';
-            
-            // 챗봇 응답 시뮬레이션
-            setTimeout(() => {
-                const response = generateBotResponse(message);
-                addMessage(response, 'bot');
-            }, 1000);
-        }
-        
-        function addMessage(text, sender) {
-            const messagesContainer = document.getElementById('chatbot-messages');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${sender}-message`;
-            messageDiv.style.marginBottom = '15px';
-            
-            const messageContent = document.createElement('div');
-            messageContent.style.padding = '12px';
-            messageContent.style.borderRadius = '15px';
-            messageContent.style.maxWidth = '80%';
-            messageContent.style.display = 'inline-block';
-            
-            if (sender === 'user') {
-                messageContent.style.background = '#007bff';
-                messageContent.style.color = 'white';
-                messageContent.style.marginLeft = 'auto';
-                messageContent.style.textAlign = 'right';
-            } else {
-                messageContent.style.background = '#e8f5e8';
-                messageContent.style.color = '#333';
-            }
-            
-            messageContent.innerHTML = text;
-            messageDiv.appendChild(messageContent);
-            messagesContainer.appendChild(messageDiv);
-            
-            // 스크롤을 맨 아래로
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            var userDiv = document.createElement('div');
+            userDiv.className = 'message user-message';
+            userDiv.style.marginBottom = '15px';
+            userDiv.innerHTML = '<div style="background: #e3f2fd; padding: 12px; border-radius: 15px; max-width: 80%; display: inline-block; text-align:right; float:right;">' + userText + '</div>';
+            messages.appendChild(userDiv);
+            // 스크롤 하단 이동
+            messages.scrollTop = messages.scrollHeight;
+            // 간단한 봇 응답 시뮬레이션
+            setTimeout(function() {
+                var botDiv = document.createElement('div');
+                botDiv.className = 'message bot-message';
+                botDiv.style.marginBottom = '15px';
+                botDiv.innerHTML = '<div style="background: #e8f5e8; padding: 12px; border-radius: 15px; max-width: 80%; display: inline-block;">' + generateBotResponse(userText) + '</div>';
+                messages.appendChild(botDiv);
+                messages.scrollTop = messages.scrollHeight;
+            }, 600);
+            input.value = '';
         }
         
         function generateBotResponse(userMessage) {
             const responses = {
-                'ptcf': 'PTCF 프레임워크는 프롬프트 작성의 핵심 구조입니다:<br><br><strong>P - Persona (페르소나):</strong> AI에게 특정 역할 부여<br><strong>T - Task (작업):</strong> 구체적인 작업 정의<br><strong>C - Context (맥락):</strong> 배경 정보 제공<br><strong>F - Format (형식):</strong> 결과물 형태 지정<br><br>이 4가지 요소를 모두 포함하면 효과적인 프롬프트가 됩니다!',
+                'ptcf': '단계적 사고 유도법은 AI가 체계적으로 답변하도록 하는 기법입니다:<br><br>1️⃣ "단계적으로 생각해"<br>2️⃣ "차근차근 분석해"<br>3️⃣ "순서대로 접근해"<br><br>이런 키워드를 사용하면 AI가 더 구조화된 답변을 제공합니다.',
                 '단계적': '단계적 사고 유도법은 AI가 체계적으로 답변하도록 하는 기법입니다:<br><br>1️⃣ "단계적으로 생각해"<br>2️⃣ "차근차근 분석해"<br>3️⃣ "순서대로 접근해"<br><br>이런 키워드를 사용하면 AI가 더 구조화된 답변을 제공합니다.',
                 '성찰': '성찰 질문법은 AI가 자신의 답변을 평가하고 개선하도록 유도하는 기법입니다:<br><br>• "너의 답변을 평가해보고 개선해"<br>• "다른 관점에서 다시 생각해"<br>• "반대 의견도 고려해"<br><br>이를 통해 더 완성도 높은 답변을 얻을 수 있습니다.',
                 '역질문': '역질문 기법은 AI가 먼저 질문을 통해 정보를 수집한 후 답변하도록 유도하는 방법입니다:<br><br>예시: "내 질문의 의도를 명확히 하기 위해 네가 내게 더 필요한 정보를 3가지 질문으로 요청한 후 답변해주세요."<br><br>이렇게 하면 더 정확하고 맞춤형 답변을 받을 수 있습니다.',
                 '구조화': '구조화 표현법은 시각적 구분을 통해 AI가 명확하게 이해하도록 돕는 기법입니다:<br><br>활용 기호들:<br>• 줄바꿈: 섹션 구분<br>• 괄호 (): 부가 설명<br>• 따옴표 "": 중요 키워드<br>• 구분선 ---: 명확한 영역 분리<br>• 번호 1), 2): 순서나 우선순위<br>• 대괄호 []: 변수나 예시'
             };
-            
             const lowerMessage = userMessage.toLowerCase();
-            
             if (lowerMessage.includes('ptcf') || lowerMessage.includes('프레임워크')) {
                 return responses.ptcf;
             } else if (lowerMessage.includes('단계적') || lowerMessage.includes('차근차근')) {
